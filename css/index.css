@@ -12,6 +12,7 @@ body{
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page  */ 
 
+/*Alligned both buttons to the middle of the screen */
 .postButtons {
         position: absolute;
         top: 50%;
@@ -20,6 +21,7 @@ body{
         transform: translate(-50%, -50%)
 }
 
+/*Set a style for the create posts/all posts buttons */
 .midButtons {
  width: 110px;
  padding: 10px;
