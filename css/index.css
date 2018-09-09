@@ -10,5 +10,33 @@ body{
    display: block;
 } 
 
-/* Set a style for the rest of the elements besides the header elements on the index.html page */
+/* Set a style for the rest of the elements besides the header elements on the index.html page  */ 
+
+.postButtons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+
+.midButtons {
+ width: 110px;
+ padding: 10px;
+ cursor: pointer;
+ font-weight: 500;
+ font-size: 90%;
+ background: orange;
+ color: black;                 
+ margin: 10px 10px 0px 0px;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+button:hover {
+ opacity:1;
+}
+
+
                                  
