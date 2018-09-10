@@ -5,7 +5,7 @@ var modal = document.getElementById('createPostModal');
 var btn = document.getElementById("createPost");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spancreate = document.getElementById("closecreate");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -13,7 +13,7 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+spancreate.onclick = function() {
     modal.style.display = "none";
 }
 
@@ -23,3 +23,5 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 } 
+
+
