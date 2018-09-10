@@ -15,7 +15,7 @@ function allCommt(id) {
         node.className ="paraStyle";             
         var textnode = document.createTextNode(id.value);      
         node.appendChild(textnode);
-        div.insertBefore(node,div.lastElementChild) ; //using insertBefore() method to append before last element
+        div.insertBefore(node,div.childNodes[0]) ; //using insertBefore() method to append before last element
 }
 //enabling editing of blog body by using contentEditable property
 var count1=0;
