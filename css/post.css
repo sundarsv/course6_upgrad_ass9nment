@@ -13,7 +13,46 @@
     font-size: 30px;
 }
 .blogContent{
+    
 
 }
-
+.blogTite{
+    text-align: center;
+}
+.editButton{
+    float: right;
+    padding: 1%;
+    background-color: palevioletred;
+    color:white;
+    width: 7%;
+}
+.likeButton{
+    padding: 1%;
+    background-color: palevioletred;
+    color:white;
+    width: 7%;
+}
+.commentText{
+    width: 50%;
+    height:80px;
+}
+.commPost{
+    padding: 1%;
+    background-color: palevioletred;
+    color:white;
+    width: 7%;
+    margin-top: 1%;
+}
+.allCommt{
+    font-weight: bold;
+}
+.showCommt{
+    background-color: grey;
+    padding:10px;
+    
+}
+.paraStyle{
+    background-color: white;
+    height: 90px;
+}
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
