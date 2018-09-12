@@ -10,6 +10,7 @@ var spancreate = document.getElementById("closecreate");
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
+    modalContent.style.width = "80%";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -22,6 +23,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-} 
-
-
+}

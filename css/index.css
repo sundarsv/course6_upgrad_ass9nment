@@ -39,3 +39,33 @@ body{
 button:hover {
  opacity:1;
 }
+
+/*Styles specific to create post modal view */
+#create-post-modal-content {
+    width: 70%;
+}
+#create-post-title {
+    width: 50%;
+}
+.create-post-button {
+    margin-top: auto;
+    background-color:#2BB968;
+    padding: 15px;
+    border:none;
+    color:white;
+    font-weight: bold;
+}
+.create-post-submit {
+    text-align: center;
+}
+.text-area-title {
+    font-family: 'Abel', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom:1%;
+}
+textarea {
+    background-color:#F2F2F2;
+    width:90%;
+    margin-bottom:2%;
+}
