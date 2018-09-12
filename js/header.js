@@ -1,5 +1,3 @@
-
-
 // Get the modal
 var modalin = document.getElementById('signInModal');
 
@@ -41,6 +39,12 @@ var spanup = document.getElementById("closeup");
 
 // When the user clicks on the button, open the modal
 btnup.onclick = function() {
+    modalup.style.display = "block";
+}
+
+//Function to close sign in view and open Sign up Modal view
+function openSignUpModal() {
+    modalin.style.display = "none";
     modalup.style.display = "block";
 }
 

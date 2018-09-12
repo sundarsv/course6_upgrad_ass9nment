@@ -11,6 +11,7 @@
     <!-- Place all CSS for fonts in this file -->
     <link href='css\font.css' rel='stylesheet' type='text/css'>
 
+
 </head>
 <body>
     <div id="main-container-div">
@@ -36,7 +37,7 @@
             <!-- Opening bliglist in same tab on clicking all posts button -->
             <button type="button" class="midButtons" onclick="window.open('./html/bloglist.html','_self');"> All Posts </button>
             <!-- opening createPostModal on clicking create Post Button -->
-            <button type="button" class="midButtons" id="createPost" > Create Post </button>
+            <button type="button" class="midButtons" id="createPost"> Create Post </button>
 
 
      </div>
@@ -46,18 +47,46 @@
     <div id="signInModal" class="modal">
      <!-- Modal content -->
      <div class="modal-content">
-          <span id="closein">&times;</span>
-          <p>Welcome back!</p>
+         <span class="close" id="closein">&times;</span>
+         <br>
+         <p class="modal-title">Welcome Back!</p>
+         <hr>
+         <form>
+             <p>Username</p>
+             <input type="text" name="Username" placeholder="Enter Username" required>
+             <p>Password</p>
+             <input type="password" name="Password" placeholder="Enter Password" required>
+             <!--A separate div for Sign In button to handle styling and positioning-->
+             <div>
+                 <input class="submitbtn" type="submit" value="Sign In">
+             </div>
+             <p class="form-footer-text">Not a member? <a onclick="openSignUpModal()">Sign Up</a></p>
+         </form>
      </div>
-
-    </div> 
+    </div>
 
     <!-- Modal Class to open sign up modal -->
     <div id="signUpModal" class="modal">
      <!-- Modal content -->
      <div class="modal-content">
-         <span id="closeup">&times;</span>
-          <p>Get Started</p>
+         <span class="close" id="closeup">&times;</span>
+         <br>
+         <p class="modal-title">Get Started</p>
+         <hr>
+         <form>
+             <p>Full Name</p>
+             <input type="text" name="Fullname" placeholder="Enter Full Name" required>
+             <p>Username</p>
+             <input type="text" name="Username" placeholder="Enter Username" required>
+             <p>Password</p>
+             <input type="password" name="Password" placeholder="Enter Password" required>
+             <p>Confirm Password</p>
+             <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required>
+             <!--A separate div for Sign Up button to handle styling and positioning-->
+             <div>
+                 <input class="submitbtn" type="submit" value="Sign Up">
+             </div>
+         </form>
      </div>
 
     </div> 
@@ -67,9 +96,20 @@
     <!-- Modal Class to open create post modal -->
     <div id="createPostModal" class="modal">
      <!-- Modal content -->
-     <div class="modal-content">
-         <span id="closecreate">&times;</span>
-          <p>Pen Your Post</p>
+     <div id="create-post-modal-content" class="modal-content">
+         <span class="close" id="closecreate">&times;</span>
+         <br>
+         <p class="modal-title">Pen Your Post</p>
+         <form id="createPostForm">
+             <p>Title:</p>
+             <input id="create-post-title" type="text" name="posttitle">
+         </form>
+         <p class="text-area-title">Content:</p>
+         <textarea name="postContent" rows="20" cols="100" form="createPostForm"></textarea>
+         <!--A separate div for Create button to handle styling and positioning-->
+         <div class="create-post-submit">
+             <input class="create-post-button" type="submit" value="Create">
+         </div>
      </div>
 
     </div> 
