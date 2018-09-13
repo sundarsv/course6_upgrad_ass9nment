@@ -12,31 +12,70 @@
 <body>
     <div id="main-container-div">
         <div class="header">
-                                
-            <!-- Insert code for Sign Up, Sign In button here. 
-                 Add code for "ScriBBler" heading and the sub-heading -->
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
 
             <!-- Added two buttons which are placed on top right side of the heaader  -->
-            <input class="topButtons" type="button" value="Sign Up">
-            <input class="topButtons" type="button" value="Sign In">
+            <!-- Open SignUpModal on clicking sign Up button -->
+            <input class="topButtons" id="signUp" type="button" value="Sign Up">
+            <!-- Open SignInModal on clicking sign In button -->
+            <input class="topButtons" id="signIn" type="button" value="Sign In">
             <!-- Logo creation  -->
-            <a id="pageTitle" class="logo-title">ScriBBler</a>
+            <a id="pageTitle" class="logo-title" color="#112fb4">ScriBBler</a>
             <p class="middleText">Explore, Imagine, Create</p>
 
         </div>
-    </div>
-    <div>
-
-        <!-- Insert code for Sign In modal here -->
 
     </div>
 
-    <div>
-
-        <!-- Insert code for Sign Up modal here -->
-
+    <!-- Modal Class to open sign in modal -->
+    <div id="signInModal" class="modal">
+     <!-- Modal content -->
+     <div class="modal-content">
+         <span class="close" id="closein">&times;</span>
+         <br>
+         <p class="modal-title">Welcome Back!</p>
+         <hr>
+         <form>
+             <p>Username</p>
+             <input type="text" name="Username" placeholder="Enter Username" required>
+             <p>Password</p>
+             <input type="password" name="Password" placeholder="Enter Password" required>
+             <!--A separate div for Sign In button to handle styling and positioning-->
+             <div>
+                 <input class="submitbtn" type="submit" value="Sign In">
+             </div>
+             <p class="form-footer-text">Not a member? <a onclick="openSignUpModal()">Sign Up</a></p>
+         </form>
+     </div>
     </div>
+
+    <!-- Modal Class to open sign up modal -->
+    <div id="signUpModal" class="modal">
+     <!-- Modal content -->
+     <div class="modal-content">
+         <span class="close" id="closeup">&times;</span>
+         <br>
+         <p class="modal-title">Get Started</p>
+         <hr>
+         <form>
+             <p>Full Name</p>
+             <input type="text" name="Fullname" placeholder="Enter Full Name" required>
+             <p>Username</p>
+             <input type="text" name="Username" placeholder="Enter Username" required>
+             <p>Password</p>
+             <input type="password" name="Password" placeholder="Enter Password" required>
+             <p>Confirm Password</p>
+             <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required>
+             <!--A separate div for Sign Up button to handle styling and positioning-->
+             <div>
+                 <input class="submitbtn" type="submit" value="Sign Up">
+             </div>
+         </form>
+     </div>
+
+    </div> 
+
+
 
     <div class="allPostsContainer">
     <div class="post">
