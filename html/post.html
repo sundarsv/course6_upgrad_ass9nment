@@ -81,7 +81,7 @@
 <div class="blogAuthor">
 
     <!-- Insert code for Edit/Save button and  -->
-    <button class ="editButton" onclick ="editFunction()">Edit</button>
+    <button class ="editButton" onclick ="editFunction()">Edit<i class="fa fa-edit"></i></button>
 
     <p>Jimi</p>
 </div>
@@ -93,11 +93,11 @@
 </div>
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
-    <button class ="likeButton" onclick ="likeFn()">Like</button>
+    <button class ="likeButton" onclick ="likeFn()"><i class="fa fa-thumbs-up"></i>Like</button>
     <p id ="likePara">Be the first one to like this!</p>
-    <input class ="commentText" type ="text" placeholder="Leave a comment..." id ="commtText" value ="">
+    <textarea class ="commentText" type ="text" placeholder="Leave a comment..." id ="commtText" value =""></textarea>
     <br>
-    <button class ="commPost" onclick ="allCommt(commtText)">Comment</button>
+    <button class ="commPost" onclick ="allCommt(commtText);document.getElementById('commtText').value=''">Comment</button>
     <p class ="allCommt"></p>
     <div class ="showCommt">
 
