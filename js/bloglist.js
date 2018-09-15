@@ -1,4 +1,4 @@
-var modal = document.querySelector(".modal");
+var modal = document.querySelector(".trash-modal");
 var trigger = document.querySelector(".trigger");
 var closeButton = document.querySelector(".close-button");
 
@@ -6,7 +6,7 @@ var closeButton = document.querySelector(".close-button");
  * function to toggle visibility of modal
  */
 function toggleModal() {
-    modal.classList.toggle("show-modal");
+    modal.classList.toggle("trash-show-modal");
 }
 
 /**
