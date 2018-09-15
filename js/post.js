@@ -6,6 +6,9 @@ function likeFn() {
     document.getElementById('likePara').innerHTML=template;
     document.getElementsByClassName('likeButton')[0].innerHTML='<i class="fa fa-thumbs-up"></i>'+"Liked!";
 }
+
+
+
 //function to show all comments with the latest comment coming first
 function allCommt(id) {
         var templateOne = 'All Comments';
@@ -18,6 +21,7 @@ function allCommt(id) {
         node.appendChild(textnode);
         div.insertBefore(node,div.childNodes[0]) ; //using insertBefore() method to append before last element
 }
+
 //enabling editing of blog body by using contentEditable property
 var count1=0;
 function editFunction() {

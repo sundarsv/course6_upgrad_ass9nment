@@ -1,3 +1,7 @@
+/**
+Code for createPost Modal
+*/
+
 // Get the modal
 var modal = document.getElementById('createPostModal');
 
