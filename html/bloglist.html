@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
     <link href='..\css\font.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
@@ -29,51 +29,50 @@
 
     <!-- Modal Class to open sign in modal -->
     <div id="signInModal" class="modal">
-     <!-- Modal content -->
-     <div class="modal-content">
-         <span class="close" id="closein">&times;</span>
-         <br>
-         <p class="modal-title">Welcome Back!</p>
-         <hr>
-         <form>
-             <p>Username</p>
-             <input type="text" name="Username" placeholder="Enter Username" required>
-             <p>Password</p>
-             <input type="password" name="Password" placeholder="Enter Password" required>
-             <!--A separate div for Sign In button to handle styling and positioning-->
-             <div>
-                 <input class="submitbtn" type="submit" value="Sign In">
-             </div>
-             <p class="form-footer-text">Not a member? <a onclick="openSignUpModal()">Sign Up</a></p>
-         </form>
-     </div>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="closein">&times;</span>
+            <br>
+            <p class="modal-title">Welcome Back!</p>
+            <hr>
+            <form>
+                <p>Username</p>
+                <input type="text" name="Username" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password" name="Password" placeholder="Enter Password" required>
+                <!--A separate div for Sign In button to handle styling and positioning-->
+                <div>
+                    <input class="submitbtn" type="submit" value="Sign In">
+                </div>
+                <p class="form-footer-text">Not a member? <span class="form-href" onclick="openSignUpModal()">Sign Up</span></p>
+            </form>
+        </div>
     </div>
 
     <!-- Modal Class to open sign up modal -->
     <div id="signUpModal" class="modal">
-     <!-- Modal content -->
-     <div class="modal-content">
-         <span class="close" id="closeup">&times;</span>
-         <br>
-         <p class="modal-title">Get Started</p>
-         <hr>
-         <form>
-             <p>Full Name</p>
-             <input type="text" name="Fullname" placeholder="Enter Full Name" required>
-             <p>Username</p>
-             <input type="text" name="Username" placeholder="Enter Username" required>
-             <p>Password</p>
-             <input type="password" name="Password" placeholder="Enter Password" required>
-             <p>Confirm Password</p>
-             <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required>
-             <!--A separate div for Sign Up button to handle styling and positioning-->
-             <div>
-                 <input class="submitbtn" type="submit" value="Sign Up">
-             </div>
-         </form>
-     </div>
-
-    </div> 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="closeup">&times;</span>
+            <br>
+            <p class="modal-title">Get Started</p>
+            <hr>
+            <form>
+                <p>Full Name</p>
+                <input type="text" name="Fullname" placeholder="Enter Full Name" required>
+                <p>Username</p>
+                <input type="text" name="Username" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password" name="Password" placeholder="Enter Password" required>
+                <p>Confirm Password</p>
+                <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required>
+                <!--A separate div for Sign Up button to handle styling and positioning-->
+                <div>
+                    <input class="submitbtn" type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </div>
 
 
 
@@ -186,7 +185,6 @@
             
             </div>
         </div>
-
         <div>
 
             <!-- Insert code for delete modal here -->
