@@ -124,3 +124,10 @@ margin: 10px 10px 0px 10px;
     color:white;
     font-weight: bold;
 }
+
+/*Responsive design to handle signin and signup modals on small breakpoints*/
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        width: 80%;
+    }
+}
