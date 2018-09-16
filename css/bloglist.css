@@ -185,3 +185,39 @@ body {
 .btn-danger:hover, .btn-danger:focus {
     background: #ee3535;
 }
+@media(min-width: 320px)and (max-width: 800px) 
+{
+    .allPostsContainer{
+        display:inline-block;
+    }
+    .post{
+    width:190px;  
+}
+@media(max-width:540px)
+{
+    .allPostsContainer{
+        display:inline-block;
+    }
+    .post{
+    width:140px;
+    }
+}
+@media(max-width:440px)
+{
+    .allPostsContainer{
+        display:inline-block;
+    }
+    .post{
+    width:90px;
+    }
+}
+@media(max-width:340px)
+{
+    .allPostsContainer{
+        display:inline-block;
+    }
+    .post{
+    width:80px;
+    }
+}
+}
