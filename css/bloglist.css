@@ -1,4 +1,3 @@
-
 /* Styling for post */
 .post {
     position: relative;
@@ -186,7 +185,6 @@ body {
 .btn-danger:hover, .btn-danger:focus {
     background: #ee3535;
 }
-
 @media(min-width: 320px)and (max-width: 800px) 
 {
     .allPostsContainer{
@@ -223,7 +221,3 @@ body {
     }
 }
 }
-
-
-
-

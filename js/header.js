@@ -1,3 +1,7 @@
+/**
+Code for Sign In Modal
+*/
+
 // Get the modal
 var modalin = document.getElementById('signInModal');
 
@@ -25,8 +29,9 @@ window.onclick = function(event) {
 } 
 
 
-
-
+/**
+Code for Sign Up Modal
+*/
 
 // Get the modal
 var modalup = document.getElementById('signUpModal');

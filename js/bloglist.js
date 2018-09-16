@@ -25,6 +25,8 @@ $(".trigger").on("click", function (event) {
   toggleModal();
 });
 
-
+/**
+Adding close button event and added window events.
+*/
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
