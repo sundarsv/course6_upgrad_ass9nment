@@ -1,3 +1,5 @@
+
+/* Styling for post */
 .post {
     position: relative;
     width: 100%;
@@ -20,6 +22,8 @@
         font-weight: bold;
         color: #000;
 }
+
+/*Post Content display */
 .post-content {
         width: 75%;          
         display: table-cell;
@@ -30,6 +34,7 @@
         padding: 0 20px;
 }
 
+/* Post Title Display */
 .post-title{
     font-family: 'Itim', cursive;
     font-weight: bold;
@@ -65,6 +70,7 @@
   font-size:30px;
 }
 
+/* Trash modal styling */
 .trash-modal {
     position: fixed;
     left: 0;
@@ -91,7 +97,7 @@
     text-align: center;
     font-size: 14px;
 }
-
+/* Close button */
 .close-button {
     float: right;
     width: 1.5rem;
@@ -112,6 +118,7 @@
     padding: 10px;
 }
 
+/* Post styling */
 .post-more {
     float: right;
     cursor: pointer;
@@ -129,6 +136,7 @@
     display:block;
 }
 
+/* Body styling */
 body {
     height: 100%;
     width: 100%;
@@ -146,7 +154,7 @@ body {
     flex-wrap: wrap;
 }
 
-
+/*Styling for confirm */
 .confirm {
     font-family: 'JosefinSans-Bold';
     font-size: 16px;
@@ -178,3 +186,44 @@ body {
 .btn-danger:hover, .btn-danger:focus {
     background: #ee3535;
 }
+
+@media(min-width: 320px)and (max-width: 800px) 
+{
+    .allPostsContainer{
+        display:inline-block;
+    }
+    .post{
+    width:190px;  
+}
+@media(max-width:540px)
+{
+    .allPostsContainer{
+        display:inline-block;
+    }
+    .post{
+    width:140px;
+    }
+}
+@media(max-width:440px)
+{
+    .allPostsContainer{
+        display:inline-block;
+    }
+    .post{
+    width:90px;
+    }
+}
+@media(max-width:340px)
+{
+    .allPostsContainer{
+        display:inline-block;
+    }
+    .post{
+    width:80px;
+    }
+}
+}
+
+
+
+
